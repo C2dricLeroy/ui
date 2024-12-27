@@ -16,7 +16,7 @@ export interface AccordionProps {
 
 const Accordion = ({ items }: AccordionProps) => {
     return (
-        <AccordionRoot>
+        <AccordionRoot className={className}>
             {items.map((item, index) => (
                 <AccordionItem value={index} key={index} >
                     <AccordionHeader>
